@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Orange</ion-title>
+    <ion-buttons start>
+         <button ion-button icon-only routerLink="/pic-dictionary" style="background-color:white">
+          <ion-icon name="md-arrow-round-back" style="font-size: 24px;"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-padding">
+    
+      <div>
+          <img src="assets/homePageBanner.jpg">
+        </div>  
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p style="font-size: 20px;">Orange</p>
+              </ion-col>
+              <ion-col>
+                <ion-icon *ngIf="showPlayButton1" (click)="playAudio1()" name="ios-play" style="    
+                font-size: 30px;
+                margin-top: 22px;
+                float: right;">
+                </ion-icon>
+                <ion-icon *ngIf="!showPlayButton1" (click)="stopAudio1()" name="pause" style="    
+                font-size: 30px;
+                margin-top: 22px;
+                float: right;">
+                </ion-icon>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <p style="font-size: 20px;">ส้ม</p>
+              </ion-col>
+              <ion-col (click)="playAudio()">
+                <ion-icon *ngIf="showPlayButton2" (click)="playAudio2()" name="ios-play" style="    
+                font-size: 30px;
+                margin-top: 22px;
+                float: right;">
+                </ion-icon>
+                <ion-icon *ngIf="!showPlayButton2" (click)="stopAudio2()" name="pause" style="    
+                font-size: 30px;
+                margin-top: 22px;
+                float: right;">
+                </ion-icon>
+              </ion-col>
+
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>
