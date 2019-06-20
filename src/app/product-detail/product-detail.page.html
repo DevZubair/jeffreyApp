@@ -34,10 +34,11 @@
                 <ion-label class="marginLeft-8p">
                   <h2>ส้ม</h2>
                 </ion-label>
-                <ion-icon *ngIf="showPlayButton2" (click)="stopAudio2()" name="ios-play"  style="font-size: 24px;" horizontal="end"></ion-icon>
+                <ion-icon *ngIf="showPlayButton2" (click)="playAudio2()" name="ios-play"  style="font-size: 24px;" horizontal="end"></ion-icon>
               <ion-icon *ngIf="!showPlayButton2" (click)="stopAudio2()" name="pause" style="font-size: 24px;" horizontal="end"></ion-icon>
               </ion-item>
         </ion-list> 
+
         <ion-row class="padding-54">
             <ion-col size="4">
               <button ion-button style="background-color: transparent;">
