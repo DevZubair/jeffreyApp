@@ -1,33 +1,59 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>{{categoryID}}</ion-title>
-    <ion-buttons start>
-        <button ion-button icon-only routerLink="/pic-dictionary" style="background-color:white">
-          <ion-icon name="md-arrow-round-back" style="font-size: 24px;"></ion-icon>
+<!-- <ion-header>
+    <ion-toolbar color="primary">
+    
+    <ion-buttons>
+        
+        <button ion-button icon-only clear routerLink="/pic-dictionary">
+          <ion-icon name="md-arrow-round-back" style="font-size: 24px;" slot="start" style="color: white"></ion-icon>
         </button>
       </ion-buttons>
       
   </ion-toolbar>
-</ion-header>
-
+</ion-header> -->
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons  routerLink="/pic-dictionary"> 
+             <ion-icon name="md-arrow-round-back" style="font-size: 24px;" horizontal="start"></ion-icon>
+          <ion-title>{{categoryID}}</ion-title>
+          <ion-icon name="ios-search" style="font-size: 24px;" horizontal="end"></ion-icon>
+        <ion-icon name="md-more" style="font-size: 24px;" horizontal="end"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 <ion-content>
     <ion-list>
-        <ion-item routerLink="/product-detail">
-          <img src="assets/homePageBanner.jpg" style="width: 90px;" routerDirection="forward">
-          <ion-label>Fruits</ion-label>
-        </ion-item>
-        <ion-item>
-            <img src="assets/homePageBanner.jpg" style="width: 90px;" routerDirection="forward">
-          <ion-label>Vegetables</ion-label>
-        </ion-item>
-        <ion-item>
-            <img src="assets/homePageBanner.jpg" style="width: 90px;" routerDirection="forward">
-          <ion-label>Food</ion-label>
-        </ion-item>
-        <ion-item>
-            <img src="assets/homePageBanner.jpg" style="width: 90px;" routerDirection="forward">
-          <ion-label>ABC</ion-label>
-        </ion-item>
+      <ion-item routerLink="/product-detail" no-padding>
+      <img src="assets/orange.jpg" style="width: 90px;" routerDirection="forward" class="marginList">
+      <ion-label class="marginLeft-8p">
+        <h2>Orange</h2>
+          <h2>ส้ม</h2>
+      </ion-label>
+     <ion-icon name="ios-arrow-forward" style="font-size: 24px;" horizontal="end"></ion-icon>
+    </ion-item>
+    <ion-item routerLink="/product-detail" no-padding>
+      <img src="assets/jackfruit.jpg" style="width: 90px;" routerDirection="forward" class="marginList">
+      <ion-label class="marginLeft-8p">
+          <h2>JackFruit</h2>
+          <h2>ขนุน</h2>
+      </ion-label>
+     <ion-icon name="ios-arrow-forward" style="font-size: 24px;" horizontal="end"></ion-icon>
+    </ion-item>
+    <ion-item routerLink="/product-detail" no-padding>
+      <img src="assets/banana.jpg" style="width: 90px;" routerDirection="forward" class="marginList">
+      <ion-label class="marginLeft-8p">
+          <h2>Banana</h2>
+          <h2>กล้วย</h2>
+      </ion-label>
+     <ion-icon name="ios-arrow-forward" style="font-size: 24px;" horizontal="end"></ion-icon>
+    </ion-item>
+    <ion-item routerLink="/product-detail" no-padding>
+      <img src="assets/lime.jpg" style="width: 90px;" routerDirection="forward" class="marginList">
+      <ion-label class="marginLeft-8p">
+          <h2>Lime</h2>
+          <h2>มะนาว</h2>
+      </ion-label>
+     <ion-icon name="ios-arrow-forward" style="font-size: 24px;" horizontal="end"></ion-icon>
+    </ion-item>
       
       </ion-list>
 </ion-content>

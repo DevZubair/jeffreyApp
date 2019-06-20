@@ -1,1 +1,27 @@
+ion-content{
+    --ion-background-color:#02B2C1;
+}
+.ion-padding{
+    padding-left: var(--ion-padding, 44px);
+    padding-right: var(--ion-padding, 44px);
+    padding-top: var(--ion-padding, 44px);
+    padding-bottom: var(--ion-padding, 23px);
+}
 
+ .buttonStyle {
+    --color: #3a3737;
+    --background: white;
+    --font-size: 18px;
+    --border-color: white;
+    --color-activated:white;
+    --background-activated:
+}
+.buttonStyle.activated {
+    --color-activated: #3a3737;
+    --background-activated:white;
+}
+.iconButton{
+    --background: white;
+    --border: 1px solid #d8d6d6; 
+    --border-radius: 4px;
+}
