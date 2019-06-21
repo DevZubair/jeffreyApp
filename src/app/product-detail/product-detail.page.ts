@@ -25,6 +25,7 @@ export class ProductDetailPage implements OnInit {
 
   playAudio1(){
     this.showPlayButton1 = false;
+    this.stopAudio2();
     this.nativeAudio.play('sample1').then(this.onSuccess, this.onError);
   }
 
@@ -35,6 +36,7 @@ export class ProductDetailPage implements OnInit {
 
   playAudio2(){
     this.showPlayButton2 = false;
+    this.stopAudio1();
     this.nativeAudio.play('sample1').then(this.onSuccess, this.onError);
   }
 
